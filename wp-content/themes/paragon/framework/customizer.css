@@ -1,0 +1,62 @@
+				#nprogress .bar, 
+				span.highlight, 
+				.vl-btn--primary:not(.disabled):not(:disabled):hover, 
+				.vl-btn--secondary, 
+				.woocommerce a.button:hover, 
+				.vl-btn-ajax-load, 
+				.vl-social-icon:hover, 
+				.comment-reply-link:hover, 
+				.comment-edit-link:hover, 
+				.null-instagram-feed .instagram-pics a::before, 
+				#wp-calendar td#today, 
+				.owl-dots .owl-dot::after, 
+				.owl-carousel .owl-prev, 
+				.owl-carousel .owl-next, 
+				.vl-video-lightbox--link, 
+				.vl-single-icon:hover, 
+				.woocommerce span.onsale, 
+				.woocommerce .star-rating span, 
+				.vl-custom-shop-title--line, 
+				.woocommerce .quantity button.minus:hover, 
+				.woocommerce .quantity button.plus:hover, 
+				.vl-cart-sidebar .vl-icon-cart span, 
+				.woocommerce-MyAccount-navigation ul li a::before
+			{background-color:#21dca4;}
+				
+				.vl-sidebar-navigation nav ul li a:hover > span, 
+				.vl-sidebar-portfolio-filter a:hover > span, 
+				.vl-sidebar-portfolio-filter a.is-active > span, 
+				.vl-sidebar-portfolio-sorting a:hover > span, 
+				.vl-sidebar-portfolio-sorting a.is-active > span, 
+				.woocommerce .widget_price_filter .ui-slider .ui-slider-handle
+			{border-color:#21dca4;}
+		
+				.vl-text-color, 
+				cite, 
+				a:hover, 
+				.vl-sidebar-navigation nav ul li a:hover, 
+				.vl-sidebar-navigation nav ul li.menu-item-has-children.sub-active > a, 
+				.vl-mobile-btn.is-active, a.vl-large-link, .vl-widget ul li a:hover, 
+				.vl-sidebar-portfolio-filter a:hover, 
+				.vl-sidebar-portfolio-filter a.is-active, 
+				.vl-sidebar-portfolio-sorting a:hover, 
+				.vl-sidebar-portfolio-sorting a.is-active, 
+				.vl-pagination span.current,
+				.vl-post--title .ion-android-star, 
+				.vl-post--meta a:hover, 
+				.vl-post-share a:hover, 
+				.vl-btn-submit span::before, 
+				.vl-pricing-table .featured-flag, 
+				.vl-back-to-top:hover, 
+				p.rtw_main a:first-child, 
+				.vl-product--add-to-card.added, 
+				.woocommerce .widget_price_filter .price_slider_amount .button:hover, 
+				.woocommerce p.stars.selected a.active:before, 
+				.woocommerce p.stars:hover a:before, 
+				.woocommerce p.stars.selected a:not(.active):before
+
+
+				
+			{color:#21dca4;}body{font-family:pragmatica;font-size:16px;font-weight:400;font-style:normal;line-height:1.6rem;text-transform:none;color:#728080;}h1, .h1{font-family:pragmatica;font-size:30px;font-weight:700;font-style:normal;line-height:3rem;text-transform:none;color:#3e3e3e;}h2, .h2{font-family:pragmatica;font-size:26px;font-weight:700;font-style:normal;line-height:2.6rem;text-transform:none;color:#3e3e3e;}h3, .h3{font-family:pragmatica;font-size:22px;font-weight:700;font-style:normal;line-height:2.2rem;text-transform:none;color:#3e3e3e;}h4, .h4{font-family:pragmatica;font-size:18px;font-weight:700;font-style:normal;line-height:1.8rem;text-transform:none;color:#3e3e3e;}h5, .h5{font-family:pragmatica;font-size:16px;font-weight:700;font-style:normal;line-height:1.6rem;text-transform:none;color:#3e3e3e;}h6, .h6{font-family:pragmatica;font-size:14px;font-weight:700;font-style:normal;line-height:1.4rem;text-transform:none;color:#3e3e3e;}blockquote{font-family:Lora, Georgia, serif;font-size:20px;font-weight:400;font-style:italic;line-height:2rem;text-transform:none;color:#3e3e3e;}.vl-btn, .woocommerce a.button{font-family:pragmatica;font-size:14px;font-weight:400;font-style:normal;line-height:1;text-transform:none;}.vl-widget--title{font-family:pragmatica;font-size:14px;font-weight:400;font-style:normal;letter-spacing:1px;line-height:1.4rem;text-transform:uppercase;color:#bdbdbd;}input:not([type="submit"]), textarea, select{font-family:pragmatica;font-size:16px;font-weight:400;font-style:normal;line-height:1.6rem;text-transform:none;color:#3e3e3e;}
+				.vl-portfolio-post--default .vl-portfolio-post--link
+			{background-color:rgba(0, 235, 192, 0.9);}.vl-portfolio-post--info .vl-portfolio-post--title{font-family:pragmatica;font-size:18px;font-weight:700;font-style:normal;line-height:1.4rem;text-transform:none;color:#ffffff;}.vl-portfolio-post--info .vl-portfolio-post--cat{font-family:pragmatica;font-size:15px;font-weight:400;font-style:italic;line-height:1.5rem;text-transform:none;color:#f9f9f9;}.vl-preloader-outer .vl-preloader-inner{background-image:url("http://localhost:8888/projects/wp-content/themes/paragon/assets/img/site-preloader.gif");}::selection{color:#ffffff;background-color:#21dca4!important;}::-moz-selection{color:#ffffff;background-color:#21dca4!important;}

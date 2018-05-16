@@ -1,0 +1,590 @@
+/*!------------------------------------------------------------------
+11. Shop
+-------------------------------------------------------------------*/
+
+// Cart Sidebar
+
+.vl-cart-sidebar
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	height 100vh
+	min-width 320px
+	padding 60px
+	z-index 30
+	background-color darken($lblack, 30%)
+	box-shadow(0 0 5px rgba(darken($lblack, 30%), .1))
+	transform(translateX(100%))
+	transition(all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000))
+	
+.vl-cart-sidebar.is-open
+	transform(translateX(0))
+
+.vl-cart-sidebar 
+	h4, h5
+		margin-bottom 0
+		color $white
+	
+.vl-cart-sidebar .vl-icon-cart
+	$btn-size = 45px
+	position absolute
+	cursor pointer
+	top 60px
+	height $btn-size
+	width $btn-size
+	left - $btn-size
+	line-height $btn-size
+	text-align center
+	color $white
+	background-color $lblack
+	user-select(none)
+	span
+		$icon-size = 16px
+		position absolute
+		top 5px
+		right 5px
+		width $icon-size
+		height $icon-size
+		border-radius $icon-size
+		line-height $icon-size
+		text-align center
+		font-size 12px
+		color $white
+
+.vl-cart-sidebar--header
+	padding-bottom 10px
+	margin-bottom 30px
+
+.vl-cart-sidebar--items
+	list-style-type none
+	margin 0
+	padding 0
+	max-height 310px
+	overflow-y scroll
+	li + li
+		margin-top 10px
+	.vl-cart-item--image
+		width 70px
+		height auto
+		float left
+	.vl-cart-item--content
+		padding-left 85px
+		p
+			margin-bottom 0
+			font-size 13px
+			color $gray
+
+.vl-cart-sidebar--subtotal
+	margin-top 30px
+	padding 10px 0
+	border-bottom 2px dashed rgba($white, .15)
+	.vl-cart-sidebar--subtotal-number
+		margin-bottom 0
+		color $gray
+
+.vl-cart-sidebar--footer
+	margin-top 30px
+	padding 10px 0
+
+
+// Related Products
+
+.woocommerce .related.products
+	margin-top 50px
+
+// Form
+
+.woocommerce .login 
+	.lost_password
+		margin-top 15px
+	.inline
+		display inline-block
+		margin-left 10px
+
+// Woo General
+
+.woocommerce a.button
+	vlbtn()
+	vlbtnprimary()
+
+.woocommerce div.product p.price ins, 
+.woocommerce div.product span.price ins,
+.woocommerce ins
+	text-decoration none
+	font-weight normal
+
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price
+	color inherit
+
+.woocommerce del
+	color $gray
+
+.woocommerce span.onsale
+	position absolute
+	top 0
+	left 0
+	color $white
+	padding 5px 20px
+	letter-spacing 1px
+	line-height inherit
+	font-weight normal
+	border-radius 0
+	text-transform uppercase
+	min-height auto
+	min-width auto
+	z-index 22
+
+.vl-custom-shop-title
+	padding 0 0 5px
+	margin-bottom 50px
+
+.product-remove a.remove
+	font-size 15px
+	height 30px
+	width 30px
+	text-align center
+	line-height 25px
+	border-radius 0
+	color $black
+	font-weight normal
+	border 2px solid darken($lgray, 3%)
+
+
+
+// Woo Single
+
+.woocommerce div.product form.cart .variations
+	margin-bottom 30px
+	select
+		margin-bottom 20px
+
+.woocommerce div.product form.cart .variations .reset_variations
+	font-size 90%
+	i
+		margin-right 4px
+
+.woocommerce #content div.product div.images, 
+.woocommerce div.product div.images, 
+.woocommerce-page #content div.product div.images, 
+.woocommerce-page div.product div.images
+	width 100%
+	margin-bottom 0
+
+.woocommerce .woocommerce-product-rating 
+	.star-rating
+		float none
+	.woocommerce-review-link
+		display inline-block
+		margin-top 10px
+		font-size 13px
+
+.woocommerce div.product .product_title
+	margin-bottom 0
+	
+.woocommerce div.product .woocommerce-product-rating
+	margin 5px 0 10px 0
+
+.woocommerce .vl-single-product .vl-product-tmb
+	position relative
+
+.woocommerce div.product form.cart, 
+.woocommerce div.product p.cart
+	margin-bottom 30px
+
+.woocommerce .sku_wrapper,
+.woocommerce .posted_in,
+.woocommerce .tagged_as
+	margin-top 10px
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register
+	border 2px solid darken($lgray, 3%)
+	padding 30px
+	margin 30px 0
+	border-radius 0
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment
+	border-radius 0
+	border 2px solid darken($lgray, 3%)
+	background-color $lgray
+
+#add_payment_method #payment ul.payment_methods, 
+.woocommerce-cart #payment ul.payment_methods, 
+.woocommerce-checkout #payment ul.payment_methods
+	padding 30px
+	border-bottom 2px solid darken($lgray, 3%)
+
+.woocommerce form .form-row .input-text, 
+.woocommerce-page form .form-row .input-text
+	margin-bottom 0
+
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price
+	font-size 100%
+	
+// Account
+
+.woocommerce-MyAccount-navigation ul
+	list-style-type none
+	margin 0
+	padding 0
+	a
+		position relative
+		display block
+		padding 10px 20px
+		background-color $lgray
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 0
+			height 100%
+			width 6px
+			transform-origin(left)
+			transform(scaleX(0))
+			transition(all 200ms ease-in-out)
+	li
+		&.is-active a,
+		&:hover a
+			color $black
+			background-color darken($lgray, 1.2%)
+		&.is-active a::before,
+		&:hover a::before
+			transform(scaleX(1))
+
+// Coupon
+
+.checkout_coupon
+	.vl-coupon,
+	input
+		max-width 300px
+		margin-bottom 0
+		
+.vl-coupon
+	position relative
+	input
+		padding 10px 40px 10px 15px
+	button
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		padding 0 15px
+		cursor pointer
+		border none
+		background none
+		box-shadow none
+		color rgba($black, 10%)
+		transition(all 150ms ease-in-out)
+		&:hover
+			color #52cd75
+
+
+// Select
+
+.select2-drop
+	margin-top -2px
+	border-radius 0
+
+.select2-drop.select2-drop-above.select2-drop-active
+	border-top 2px solid darken($lgray, 3%)
+	
+.select2-drop-active,
+.select2-dropdown-open.select2-drop-above .select2-choice, 
+.select2-dropdown-open.select2-drop-above .select2-choices
+	border 2px solid darken($lgray, 3%)
+
+.select2-search input
+	margin-bottom 0
+	padding 10px 15px
+	font-size inherit
+	line-height inherit
+	border-left none
+	border-right none
+	background-color $white
+	
+.select2-search input:focus
+	background-color $white
+		
+.select2-search
+	padding 0
+	margin-top -2px
+
+// Quantity
+
+.woocommerce
+	
+	.single_add_to_cart_button
+	
+	.quantity
+		float left
+		display inline-block
+		position relative
+		
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button
+			appearance(none)
+			margin 0
+		
+		input[type="number"]
+			margin 0
+			width 110px
+			text-align center
+			padding 5px
+	
+		button.minus,
+		button.plus
+			position absolute
+			top 0
+			height 100%
+			width 30px
+			text-align center
+			cursor pointer
+			padding 0
+			border 2px solid darken($lgray, 3%)
+			background-color $lgray
+			font-size 13px
+			color $black
+			&:hover
+				color $white
+			
+		button.minus
+			left 0 
+			
+		button.plus
+			right 0
+
+// Woo Tab
+
+.woocommerce div.product .woocommerce-tabs
+	margin-top 50px
+
+.woocommerce div.product .woocommerce-tabs ul.tabs
+	padding 0
+	margin-bottom 30px
+	
+.woocommerce div.product .woocommerce-tabs ul.tabs:before
+	border-bottom 2px solid darken($lgray, 3%)
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li
+	border 2px solid darken($lgray, 3%)
+	background-color $lgray
+	border-radius 0
+	color $black
+	padding 0
+	margin 0
+	box-shadow none
+	&::before,
+	&::after
+		display none
+	a
+		padding 10px 30px
+		font-weight normal
+	+ li
+		margin-left -6px
+
+.woocommerce div.product .woocommerce-tabs .panel
+	margin 0
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active
+	border-color darken($lgray, 3%) !important
+
+
+.woocommerce .vl-comments--number,
+.woocommerce .vl-tab-description-title,
+.woocommerce .comment-reply-title
+	margin-bottom 20px !important
+	
+.woocommerce .woocommerce-Reviews .vl-comments
+	margin-top 0
+
+.woocommerce .vl-comment--header .star-rating
+	top 6px
+
+.woocommerce .review_form_wrapper
+	margin-top 50px
+
+.woocommerce .comment-form-rating
+	font-size 13px
+
+// Woo Item
+
+.vl-product-post
+	user-select(none)
+	.vl-product-post--image
+		position relative
+		overflow hidden
+	
+.vl-product-post--info
+	padding 10px 0
+	.vl-product--title
+		font-size 18px
+		margin-bottom 0
+	.star-rating
+		float right !important
+		margin-top 15px !important
+
+.vl-product--info
+	position relative
+	overflow hidden
+	.price,
+	.vl-product--add-to-card
+		transition(all 250ms ease-in-out)
+		
+	.price
+		position relative
+		display inline-block
+		transform(translateY(0))
+		
+	.vl-product--add-to-card
+		position absolute
+		top 0
+		left 0
+		transform(translateY(100%))
+		&.added::before
+			content '\f122'
+			padding-right 4px
+			font-family ionicons
+	
+	.added_to_cart
+		display none !important
+			
+.vl-product--info:hover
+	.price
+		transform(translateY(-100%))
+	.vl-product--add-to-card
+		transform(translateY(0))
+
+
+/*------------------------------------------------------------------
+Shop Grid
+-------------------------------------------------------------------*/
+
+.vl-shop-masonry-wrapper.is-gutter
+	margin -15px
+
+.vl-shop-masonry-wrapper.is-gutter .vl-product-post
+	padding 15px
+
+.vl-shop-masonry-wrapper
+
+	&[data-col="2"] .vl-product-post
+		width 50%
+		
+	&[data-col="3"] .vl-product-post
+		width 33.333%
+
+@media (max-width: 767px)
+	.vl-shop-masonry-wrapper.is-gutter
+		&[data-col="3"] .vl-product-post
+			width 50%
+
+@media (max-width: 575px)
+	.vl-shop-masonry-wrapper.is-gutter
+		&[data-col="2"] .vl-product-post,
+		&[data-col="3"] .vl-product-post
+			width 100%
+
+
+// Woo Widgets
+
+// Widget Price Filter
+.woocommerce .widget_price_filter .ui-slider
+	margin 0 4px 15px
+	
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range
+	background-color darken($lgray, 3%)
+
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content
+	border-radius 2px
+	background-color darken($lgray, 3%)
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle
+	height 12px
+	width 12px
+	background-color $white
+	border 2px solid
+	top -4px
+	margin-left -4px
+	
+.woocommerce .widget_price_filter .price_slider_amount
+	text-align left
+	font-size 14px
+	line-height 25px
+	color $black
+
+.woocommerce .widget_price_filter .price_slider_amount .button
+	font-size 14px
+	border none
+	padding 0
+	margin 0
+	font-weight normal
+	border-radius 0
+	background none
+	float right
+	text-align right
+	color $black
+	line-height 23px
+	font-weight 700
+	border-bottom 2px solid $lgray
+	transition(all 150ms linear)
+	&:hover
+		border-bottom-color transparent
+
+.woocommerce .widget_price_filter .ui-slider-horizontal
+	height 4px
+
+// Widget Rating Filter
+
+.woocommerce .widget_rating_filter ul li
+	padding 0 0 10px
+	
+.woocommerce .widget_rating_filter ul li a
+	color $gray
+
+.woocommerce .star-rating
+	margin 3px 0
+	font-family none
+	width 60px
+	border-radius 2px
+	height 4px
+	vertical-align middle
+	background-color darken($lgray, 3%)
+	
+.woocommerce .star-rating span
+	text-indent -9999px
+	padding 0
+	
+.woocommerce .star-rating span::before
+	content ''
+	text-indent 0
+	
+.woocommerce .star-rating::before
+	content ''
+	color $gray
+
+.woocommerce .widget_layered_nav ul li.chosen a::before, 
+.woocommerce .widget_layered_nav_filters ul li a::before
+	color #f03741
+
+
+// Widget List
+
+.woocommerce ul.cart_list li, 
+.woocommerce ul.product_list_widget li
+	margin 0
+	padding 0
+	margin-bottom 10px
+	&:last-child
+		margin-bottom 0
+
+.woocommerce ul.cart_list li img, 
+.woocommerce ul.product_list_widget li img
+	width 60px
+	float left
+	margin 0 10px 0 0
+
+.woocommerce ul.product_list_widget li .reviewer,
+.woocommerce ul.product_list_widget li .amount
+	font-size 13px

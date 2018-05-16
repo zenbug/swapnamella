@@ -1,0 +1,31 @@
+/*!------------------------------------------------------------------
+06. Page 404
+-------------------------------------------------------------------*/
+
+.vl-page-error
+	min-height 70vh
+	
+.vl-page-error--image
+	display block
+	margin 0 auto 60px
+	padding-top 30px
+	max-width 200px
+	animation(page_404 2s ease-in-out infinite)
+
+.vl-page-error--title
+	margin-bottom 30px
+	font-size 46px
+	line-height 46px
+	
+.vl-page-error--description
+	font-size 18px
+
+
+@keyframes page_404
+	0%, 20%, 50%, 80%, 100%
+		transform(translateY(0))
+	40%
+		transform(translateY(-30px))
+	60%
+		transform(translateY(-15px))
+  

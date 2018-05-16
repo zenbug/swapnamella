@@ -1,0 +1,448 @@
+/*!------------------------------------------------------------------
+03. Sidebar
+-------------------------------------------------------------------*/
+
+.vl-site-outer
+	padding 50px
+
+.vl-sidebar-wrapper,
+.vl-content-wrapper
+	float left
+
+.vl-sidebar-wrapper
+	width 25%
+	padding-right 30px
+
+.vl-content-wrapper
+	width 75%
+	padding-left 30px
+
+
+
+/*------------------------------------------------------------------
+Sidebar Header
+-------------------------------------------------------------------*/
+
+header.vl-sidebar-header
+	
+	.vl-site-logo
+		display inline-block
+		margin-bottom 50px
+
+	.vl-site-description
+		display block
+		margin-bottom 40px
+		font-style italic
+		color $gray
+
+
+
+/*------------------------------------------------------------------
+Sidebar Social
+-------------------------------------------------------------------*/
+
+.vl-sidebar-social
+	display block
+	margin-top 50px
+	.vl-social-icon
+		margin-right 10px
+		&:last-child
+			margin-right 0
+		
+
+/*------------------------------------------------------------------
+Sidebar Button
+-------------------------------------------------------------------*/
+
+.vl-sidebar-content
+	margin-top 50px
+
+/*------------------------------------------------------------------
+Sidebar Footer
+-------------------------------------------------------------------*/
+
+.vl-sidebar-footer
+	margin-top 50px
+	p.vl-copyright
+		color $gray
+		margin-bottom 0
+		font-size 14px
+
+
+
+/*------------------------------------------------------------------
+Sidebar Navigation
+-------------------------------------------------------------------*/
+
+.vl-sidebar-navigation nav
+	user-select(none)
+	ul
+		list-style-type none
+		margin 0
+		padding 0
+
+.vl-sidebar-navigation nav ul li
+	padding 3px 0
+
+.vl-sidebar-navigation nav ul li a
+	position relative
+	display inline-block
+	line-height 14px
+	font-size 16px
+	color $black
+	text-shadow $white 1px 0px, $white 1px 1px, $white 0px 1px, $white -1px 1px, $white -1px 0px, $white -1px -1px, $white 0px -1px, $white 1px -1px
+
+.vl-sidebar-navigation nav ul li a > span
+	display inline-block
+	border-bottom 1px solid transparent
+		
+.vl-sidebar-navigation nav ul.sub-menu
+	display none
+	font-size 0
+	padding-left 15px
+	border-left 1px solid $lgray
+	li 
+		padding 1px 0
+		opacity 0
+		a
+			font-size 14px
+			color $gray
+
+.vl-sidebar-navigation nav ul li.menu-item-has-children > a
+	&::after
+		content '\f0d7'
+		font-family 'FontAwesome'
+		margin-top -1px
+		font-size 12px
+		padding-left 6px
+
+.vl-sidebar-navigation nav ul li.menu-item-has-children.sub-active > a::after
+	content '\f0d8'
+
+.vl-sidebar-navigation nav ul li.sub-active	 > ul.sub-menu > li
+	position relative
+	delay = 300ms
+	for num in (1..12)
+		&:nth-child({num})
+			animation-delay delay
+		delay = delay + 150ms
+	animation(fade-in-up-menu 200ms linear forwards)
+	
+@keyframes fade-in-up-menu
+	from
+		opacity 0
+		transform(translateY(0))
+	to
+		opacity 1
+		transform(translateY(5px))
+	
+/*------------------------------------------------------------------
+Toggle Button
+-------------------------------------------------------------------*/
+
+.vl-mobile-btn
+	user-select(none)
+	display none
+	margin 20px 0
+	font-size 20px
+	letter-spacing 1px
+	text-transform uppercase
+	cursor pointer
+	&::before
+		content '\f20d'
+		font-family Ionicons
+		position relative
+		padding-right 4px
+		top 1px
+
+
+/*------------------------------------------------------------------
+Media 
+-------------------------------------------------------------------*/
+
+@media (max-width: 991px)
+	.vl-sidebar-wrapper,
+	.vl-content-wrapper
+		float none
+		width 100%
+		padding 0
+		
+	.vl-site-outer
+		padding 30px
+	
+	.vl-sidebar-wrapper
+		padding-top 30px
+		padding-bottom 60px
+
+	.vl-sidebar-footer,
+	.vl-sidebar-content
+		display none
+
+	header.vl-sidebar-header
+		text-align center
+		
+		.vl-site-logo
+			margin-bottom 30px
+			
+		.vl-site-description
+			padding 0 80px
+			margin-bottom 30px
+
+	.vl-sidebar-social
+		margin-top 30px
+		text-align center
+
+	.vl-sidebar-navigation nav ul.menu
+		display none
+	
+	.vl-mobile-btn
+		display inline-block
+	
+	.vl-sidebar-navigation nav ul.sub-menu
+		padding 0
+		border none
+	
+@media (min-width: 992px)
+	.vl-sidebar-navigation nav ul.menu
+		display block !important
+
+@media (max-width: 767px)
+	header.vl-sidebar-header 
+		.vl-site-description
+			padding 0
+
+/*------------------------------------------------------------------
+Sidebar
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+Widget
+-------------------------------------------------------------------*/
+
+.vl-widget
+	position relative
+	margin-bottom 50px
+	&:last-child
+		margin-bottom 0
+
+.vl-widget--title
+	position relative
+	display block
+	margin-bottom 15px
+	padding-bottom 5px
+	&::after
+		content ''
+		position absolute
+		bottom 0
+		left 0
+		height 2px
+		width 30px
+		background-color $lgray
+
+.vl-widget ul
+	margin 0
+	padding 0
+	list-style-type none
+	li
+		position relative
+		padding 5px 0
+		clear both
+		// color $gray
+		.children
+			margin-left 15px
+		a
+			color $black
+
+
+/*------------------------------------------------------------------
+Categories / Archive Widget
+-------------------------------------------------------------------*/
+
+.widget_categories a, 
+.widget_archive a
+	margin-right 5px
+	text-transform capitalize
+
+/*------------------------------------------------------------------
+Tags Widget
+-------------------------------------------------------------------*/
+
+.tagcloud
+	font-size 0
+	> a
+		display inline-block
+		padding 6px 10px
+		margin 0 5px 5px 0
+		font-size 14px !important
+		line-height 1
+		color $lblack
+		background-color $lgray
+		border 2px solid darken($lgray, 3%)
+		&:hover
+			color $black
+			background-color darken($lgray, 3%)
+
+
+/*------------------------------------------------------------------
+Calendar Widget
+-------------------------------------------------------------------*/
+
+#wp-calendar
+	caption,
+	td,
+	th
+		text-align center
+		padding 6px
+	td#today
+		color $white
+
+/*------------------------------------------------------------------
+Search Widget
+-------------------------------------------------------------------*/
+
+.vl-search-wrap
+	position relative
+	
+.vl-search-wrap--input
+	margin 0
+
+
+/*------------------------------------------------------------------
+Social Widget
+-------------------------------------------------------------------*/
+
+
+.vl-widget-social
+	.vl-social-icon
+		margin-right 10px
+		&:last-child
+			margin-right 0
+
+
+
+/*------------------------------------------------------------------
+Recent / Popular Posts Widget
+-------------------------------------------------------------------*/
+
+.vl-widget-recent-posts,
+.vl-widget-popular-posts
+	
+	.vl-widget-posts--holder
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0
+	
+	.vl-widget-post--title
+		margin 0 0 5px
+		font-size 18px
+		line-height 1.4rem
+			
+	.vl-widget-post--date,
+	.vl-widget-post--response
+		color $gray
+		margin 0
+
+	.vl-widget-post--response
+		display none
+		
+
+
+/*------------------------------------------------------------------
+About Widget
+-------------------------------------------------------------------*/
+
+.vl-widget-about
+	
+	img + .vl-widget-about--content
+		margin-top 10px
+		
+	.vl-widget-about--signature img
+		max-height 40px
+
+
+
+/*------------------------------------------------------------------
+Recent Comments Widget
+-------------------------------------------------------------------*/
+
+.vl-widget.widget_recent_comments 
+	li a
+		display block !important
+	li .comment-author-link
+		display inline-block
+
+
+/*------------------------------------------------------------------
+Instagram Widget
+-------------------------------------------------------------------*/
+
+$instpm = 5px
+
+
+.null-instagram-feed
+	.instagram-pics
+		display block
+		margin - $instpm
+		li
+			padding $instpm
+			display inline-block
+			width 25%
+	
+	p.clear
+		text-align center
+		margin-top 20px	
+
+.null-instagram-feed li a
+	position relative
+	display block
+	&::before
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		opacity 0
+		transition(all 200ms linear)
+	&::after
+		content '\f350'
+		font-family Ionicons
+		position absolute
+		top 50%
+		left 50%
+		height 20px
+		width 20px
+		margin-left -10px
+		margin-top -10px
+		line-height 20px
+		text-align center
+		font-size 16px
+		color $white
+		opacity 0
+		transform(translateY(100%))
+		transition(all 200ms linear)
+	&:hover
+		&::before
+			opacity .9
+		&::after
+			opacity 1
+			transform(translateY(0))
+
+
+
+/*------------------------------------------------------------------
+Twitter Widget
+-------------------------------------------------------------------*/
+
+p.rtw_meta
+	margin-bottom 0
+	font-size 14px
+	line-height 1.4rem
+
+p.rtw_main
+	margin-bottom 20px
+
+p.rtw_meta,
+p.rtw_main
+	a
+		border none

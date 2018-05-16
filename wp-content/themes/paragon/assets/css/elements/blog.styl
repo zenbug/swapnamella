@@ -1,0 +1,91 @@
+/*!------------------------------------------------------------------
+02. Blog
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+Post Thumbnail
+-------------------------------------------------------------------*/
+
+.vl-post--thumbnail,
+.vl-post--thumbnail-gallery
+	position relative
+	overflow hidden
+	text-align center
+	margin-bottom 30px
+	background-color $lgray
+	.mejs-audio
+		position absolute
+		left 0
+		bottom 0
+		width 100%
+		z-index 2
+
+/*------------------------------------------------------------------
+Post Default
+-------------------------------------------------------------------*/
+
+
+.vl-postlist-default
+	
+	.vl-post-default + .vl-post-default
+		margin-top 60px
+
+
+.vl-post-default
+
+	.vl-post--footer
+		display block
+
+	.vl-post--title
+		line-height 1.6rem
+		i
+			padding-right 6px
+
+	.vl-post--meta
+		margin-bottom 20px
+		a
+			color $gray
+
+
+
+
+/*------------------------------------------------------------------
+Post Single
+-------------------------------------------------------------------*/
+
+.vl-post-single + .tagcloud
+	margin-top 30px
+	
+/*------------------------------------------------------------------
+Post Masonry Grid
+-------------------------------------------------------------------*/
+
+.vl-postlist-masonry
+	margin -15px
+	
+	.vl-post-default
+		float left
+		padding 15px 15px 40px
+	
+	&[data-col="2"]
+		.vl-post-default
+			width 50%
+
+
+@media (max-width: 767px)
+	.vl-postlist-masonry
+		&[data-col="2"]	
+			.vl-post-default
+				width 100%
+
+
+/*------------------------------------------------------------------
+Post with password
+-------------------------------------------------------------------*/
+
+.post-password-forms
+	padding 30px
+	background-color $lgray
+	border 2px solid darken($lgray, 3%)
+	max-width 300px

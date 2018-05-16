@@ -1,0 +1,20 @@
+.customize-control-kirki .buttonset{
+	margin-bottom: 30px;
+}
+
+.vc-preview-image{
+	height: 50px;
+	width: 50px;
+	display: block;
+}
+
+.vc_admin_label{
+	display: block;
+	font-style: normal !important;
+	font-size: 13px !important;
+	line-height: 1.5 !important;
+}
+
+.vc_admin_label label{
+	color: #000;
+}

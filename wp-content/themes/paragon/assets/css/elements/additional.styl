@@ -1,0 +1,163 @@
+/*!------------------------------------------------------------------
+09. Additional
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+Helper Class
+-------------------------------------------------------------------*/
+
+.vl-text-white
+	color $white !important
+
+.vl-text-black
+	color $black !important
+
+.vl-text-right
+	text-align right
+
+.vl-text-left
+	text-align left
+
+.vl-text-center
+	text-align center
+
+.vl-text-justify
+	text-align justify
+
+.vl-hidden
+	display none
+
+.vl-no-select
+	user-select(none)
+
+.vl-pull-left
+	float left
+
+.vl-pull-right
+	float right
+
+.vl-center-block
+	margin 0 auto
+
+.vl-overlay
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 1
+
+.vl-overlay + div
+	position relative
+	z-index 2
+
+.vl-fullscreen
+	width 100%
+	height 100vh
+
+.dt
+	display table
+	width 100%
+
+.dtc,
+.dt > div
+	display table-cell
+	vertical-align middle
+	width 100%
+
+.vl-parallax
+	z-index 1
+	position relative
+	background-size cover
+	background-repeat no-repeat
+	background-position 50% 50%
+
+.fa-heart-o
+	margin-left 1px !important
+
+.container.fullwidth
+	width 100% !important
+	padding 0 !important
+
+.m0
+	margin 0 !important
+
+.p0
+	padding 0 !important
+
+/*------------------------------------------------------------------
+Site Content
+-------------------------------------------------------------------*/
+
+.vl-site-outer
+	width 100%
+	margin 0 auto
+	max-width 1440px
+
+html.lightcase-open body
+	overflow hidden
+
+
+/*------------------------------------------------------------------
+Lightcase
+-------------------------------------------------------------------*/
+
+#lightcase-overlay
+	background-color rgba($black, 95%)
+	opacity 1
+
+#lightcase-info #lightcase-sequenceInfo
+	font-size 13px
+	color $gray
+
+#lightcase-info #lightcase-title
+	font-size 16px
+	color $white
+	font-weight 300
+	
+/*------------------------------------------------------------------
+Visual Composer
+-------------------------------------------------------------------*/
+
+.vc_column-inner
+	padding-top 0 !important
+
+.wpb_button,
+.wpb_content_element,
+ul.wpb_thumbnails-fluid > li
+	margin-bottom 30px !important
+
+
+
+/*------------------------------------------------------------------
+ContactForm7
+-------------------------------------------------------------------*/
+
+.wpcf7-form br
+	display none
+
+div.wpcf7-response-output
+	margin 0
+	margin-top 20px
+	padding 5px 15px
+
+span.wpcf7-not-valid-tip
+	font-size 14px !important
+	top -30px
+	position relative
+	height 0
+
+
+/*------------------------------------------------------------------
+WordPress Embed Player
+-------------------------------------------------------------------*/
+
+span.mejs-time-total.mejs-time-slider
+	outline none !important
+
+.mejs-controls .mejs-time-rail .mejs-time-current
+	background-color $gray !important
+	
+

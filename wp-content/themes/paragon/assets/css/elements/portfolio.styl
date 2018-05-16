@@ -1,0 +1,146 @@
+/*!------------------------------------------------------------------
+05. Portfolio
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+Default Style
+-------------------------------------------------------------------*/
+
+.vl-portfolio-post--default
+	.vl-portfolio-post--image
+		position relative
+		overflow hidden
+		.img-two
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background-size cover
+			background-position center center
+			background-repeat no-repeat
+			opacity 0
+			transition(all 300ms ease-in-out)
+			transform(scale(1.4))
+
+.vl-portfolio-post--default .vl-portfolio-post--link
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	opacity 0
+	transition(all 300ms ease-in-out)
+
+.vl-portfolio-post--info
+	position absolute
+	top 15px
+	left 15px
+	visibility hidden
+	pointer-events none
+	
+	.vl-portfolio-post--title,
+	.vl-portfolio-post--cat
+		margin 0
+		padding 0
+		opacity 0
+		transition(all 200ms linear)
+
+	.vl-portfolio-post--cat
+		transition-delay 50ms
+
+.vl-portfolio-post--default .vl-portfolio-post--wrapper:hover
+	
+	.img-two
+		opacity 1
+		transform(scale(1))
+		
+	.vl-portfolio-post--link
+		opacity 1
+
+	.vl-portfolio-post--info
+		visibility visible
+		
+		.vl-portfolio-post--title
+			animation(slide_info_text 200ms 50ms linear forwards)
+		.vl-portfolio-post--cat
+			animation(slide_info_text 200ms 100ms linear forwards)
+
+
+@keyframes slide_info_text
+	from
+		opacity 0
+		transform(translateX(-30px))
+	to
+		opacity 1
+		transform(translateX(0))
+
+/*------------------------------------------------------------------
+Portfolio Container
+-------------------------------------------------------------------*/
+
+.vl-portfolio-masonry-wrapper
+	display block
+	
+.vl-portfolio-masonry-wrapper .vl-portfolio-post
+	float left
+
+
+/*------------------------------------------------------------------
+Portfolio Grid
+-------------------------------------------------------------------*/
+
+.vl-portfolio-masonry-wrapper.is-gutter
+	margin -15px
+
+.vl-portfolio-masonry-wrapper.is-gutter .vl-portfolio-post
+	padding 15px
+
+.vl-portfolio-masonry-wrapper
+
+	&[data-col="2"] .vl-portfolio-post
+		width 50%
+		
+	&[data-col="3"] .vl-portfolio-post
+		width 33.333%
+		
+	&[data-col="4"] .vl-portfolio-post
+		width 25%
+
+@media (max-width: 767px)
+	.vl-portfolio-masonry-wrapper.is-gutter
+		&[data-col="3"] .vl-portfolio-post,
+		&[data-col="4"] .vl-portfolio-post
+			width 50%
+
+@media (max-width: 575px)
+	.vl-portfolio-masonry-wrapper.is-gutter
+		&[data-col="2"] .vl-portfolio-post,
+		&[data-col="3"] .vl-portfolio-post,
+		&[data-col="4"] .vl-portfolio-post
+			width 100%
+
+/*------------------------------------------------------------------
+Filters
+-------------------------------------------------------------------*/
+
+.vl-sidebar-portfolio-filter,
+.vl-sidebar-portfolio-sorting
+	user-select(none)
+	a
+		position relative
+		display inline-block
+		line-height 14px
+		font-size 16px
+		color $black
+		text-shadow $white 1px 0px, $white 1px 1px, $white 0px 1px, $white -1px 1px, $white -1px 0px, $white -1px -1px, $white 0px -1px, $white 1px -1px
+		> span
+			display inline-block
+			border-bottom 1px solid transparent
+		
+.vl-sidebar-portfolio-filter,
+.vl-sidebar-portfolio-sorting
+	a:hover,
+	a.is-active
+		text-decoration underline

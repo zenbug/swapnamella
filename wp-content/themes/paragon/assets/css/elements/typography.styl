@@ -1,0 +1,255 @@
+/*!------------------------------------------------------------------
+01. Typography
+-------------------------------------------------------------------*/
+
+
+// body
+
+body
+	padding 0
+	margin 0
+	background-color $white
+	min-width 320px
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+body.no-scroll
+	overflow hidden
+
+// img
+
+img
+	max-width 100%
+	height auto
+
+// paragraph
+
+p
+	margin 0 0 30px 0
+
+p.large
+	font-size 120%
+	line-height 2rem
+
+// link
+
+a
+	color inherit
+	text-decoration none
+	transition(all 150ms linear)
+
+a:hover,
+a:focus,
+a:active
+	color inherit
+	text-decoration none
+	outline none
+
+p a,
+a.vl-large-link,
+.vl-post--meta a
+	border-bottom 2px solid $lgray
+	&:hover
+		border-bottom-color transparent
+
+// heading
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+	padding 0
+	margin-top 0
+	margin-bottom 8px
+
+//style text
+
+span.highlight
+	color $white
+
+b, strong
+	font-weight 700
+
+// lists
+
+ul
+	list-style disc outside none
+
+ol
+	list-style decimal outside none
+
+ul, ol
+	list-style-position inside
+	margin 0 0 30px 0
+	padding 0
+	ul, ol
+		margin-left 30px
+	li::marker
+		color red
+		background-color green
+
+//address
+
+address
+	font-size 130%
+	margin-bottom 30px
+	font-style italic
+	line-height 2rem
+
+//blockquote
+
+blockquote
+	margin 0
+	padding 0
+
+cite
+	display block
+	&::before
+		content '\2014'
+		margin-right 4px
+		
+//code
+
+code
+	padding 2px 3px
+	border-radius(4px)
+	font-size 90%
+	color #f4645f
+	background-color $lgray
+	border 1px solid darken($lgray, 3%)
+	text-shadow 0 1px $white
+
+pre
+	overflow auto
+	clear both
+	position relative
+	max-width 100%
+	margin 0 0 30px 0
+	background-color $lgray
+	padding 30px
+	font-family monospace
+	white-space pre-wrap
+	color $text
+	&::after
+		content '\f121'
+		font-family 'FontAwesome'
+		font-size 10px
+		line-height 2
+		color $white
+		text-align center
+		position absolute
+		padding 2px 0 0 0
+		width 20px
+		top 0
+		right 0
+		height 100%
+		background-color $black
+
+// dl, dt, dd
+
+dl
+	margin-bottom 30px
+
+dt
+	color $lblack
+	font-weight 700
+	text-transform uppercase
+	font-size 16px
+
+dd
+	margin-bottom 10px
+
+//table
+
+table,
+.woocommerce table.shop_table,
+.woocommerce table.shop_attributes
+	width 100%
+	max-width 100%
+	margin 0 0 30px 0
+	border 2px solid darken($lgray, 3%)
+	background-color $lgray
+	border-radius 0
+	thead tr,
+	tbody tr,
+	tfoot tr
+		border-bottom 2px solid darken($lgray, 3%)
+	thead tr
+		color $lblack
+	tr td,
+	tr th
+		padding 30px
+		text-align left
+	tbody td,
+	tbody th
+		font-weight normal
+
+.woocommerce table.shop_attributes .alt td, 
+.woocommerce table.shop_attributes .alt th
+	background-color inherit
+
+.woocommerce table.shop_table td
+	border-top 2px solid darken($lgray, 3%)
+
+//input
+
+placeholder()
+	&::-webkit-input-placeholder
+		color $lblack
+	&:-moz-placeholder
+		color $lblack
+	&::-moz-placeholder
+		color $lblack
+	&:-ms-input-placeholder
+		color $lblack
+
+label
+	display block
+	margin-bottom 0
+	font-weight normal
+	color $lblack
+	font-size 12px
+	font-weight 700
+	text-transform capitalize
+	span
+		color #f4645f
+
+input, textarea
+	placeholder()
+
+input:not([type='submit']):not([type='checkbox']),
+textarea,
+select,
+.select2-container .select2-choice
+	display block
+	border none
+	border none
+	width 100%
+	outline none
+	padding 10px 15px
+	margin-bottom 30px
+	background-color $lgray
+	border 2px solid darken($lgray, 3%)
+	box-shadow(none)
+	border-radius(0)
+	transition(background-color 150ms linear)
+
+
+
+
+
+select
+	appearance(none)
+	background $lgray url('../img/select_bg.svg') no-repeat calc(100% - 10px) 50%
+	background-size 10px
+
+input:focus,
+textarea:focus,
+select:focus
+	outline none
+	background-color darken($lgray, 1.2%)
+
+textarea
+	max-width 100%

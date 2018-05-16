@@ -1,0 +1,794 @@
+/*!------------------------------------------------------------------
+07. Shortcodes
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------*/
+
+vlbtn()
+	display inline-block
+	position relative
+	cursor pointer
+	border none
+	outline 0
+	overflow hidden
+	color inherit
+	text-align center
+	background-color transparent
+	padding 12px 15px
+	user-select(none)
+	border-radius(0)
+	transition(all 200ms linear)
+	
+vlbtnprimary()
+	color $white
+	background-color $lblack
+	&:not(.disabled):not(:disabled):hover
+		color $white
+
+vlbtnsecondary()
+	color $white
+	&:not(.disabled):not(:disabled):hover
+		color $white
+		background-color $lblack
+
+.vl-btn
+	vlbtn()
+	i
+		vertical-align bottom
+		display inline-block
+		padding-left 4px
+
+.vl-btn + .vl-btn
+	margin-left 4px
+
+.disabled,
+.vl-btn:disabled
+	cursor not-allowed
+
+.vl-btn--block
+	display block
+	width 100%
+	
+.vl-btn--primary
+	vlbtnprimary()
+		
+.vl-btn--secondary
+	vlbtnsecondary()
+
+.vl-icon-animate-left:hover i
+	animation(animateIconLeft 200ms linear forwards)
+		
+.vl-icon-animate-right:hover i
+	animation(animateIconRight 200ms linear forwards)
+		
+.vl-icon-animate-top:hover i
+	animation(animateIconTop 200ms linear forwards)
+		
+.vl-icon-animate-bottom:hover i
+	animation(animateIconBottom 200ms linear forwards)
+
+@keyframes animateIconTop
+	49%
+		transform(translateY(-100%))
+	50%
+		opacity 0
+		transform(translateY(100%))
+	51%
+		opacity 1
+
+@keyframes animateIconBottom
+	49%
+		transform(translateY(100%))
+	50%
+		opacity 0
+		transform(translateY(-100%))
+	51%
+		opacity 1
+
+@keyframes animateIconLeft
+	49%
+		transform(translateX(-100%))
+	50%
+		opacity 0
+		transform(translateX(100%))
+	51%
+		opacity 1
+		
+@keyframes animateIconRight
+	49%
+		transform(translateX(100%))
+	50%
+		opacity 0
+		transform(translateX(-100%))
+	51%
+		opacity 1
+
+/*------------------------------------------------------------------
+Dropcap
+-------------------------------------------------------------------*/
+
+.vl-dropcap
+	float left
+	font-weight 700
+
+/*------------------------------------------------------------------
+Image with caption
+-------------------------------------------------------------------*/
+
+
+.vl-image-with-caption
+	position relative
+	display block
+	.vl-caption
+		position absolute
+		margin 30px
+		padding 6px 20px
+		z-index 2
+		span
+			position relative
+			color $lblack
+			font-size 14px
+			opacity 0
+			z-index 3
+			transition(all 50ms linear)
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 0
+			background-color $white
+			transition(all 200ms linear)
+			
+		&.vl-caption-top-left
+			top 0
+			left 0
+		&.vl-caption-top-right
+			top 0
+			right 0
+		&.vl-caption-bottom-right
+			bottom 0
+			right 0
+		&.vl-caption-bottom-left
+			bottom 0
+			left 0		
+				
+	&:hover .vl-caption
+		
+		span
+			opacity 1
+			transition(all 200ms 200ms linear)
+			
+		&::before
+			height 100%
+
+
+
+@media (max-width: 767px)
+	.vl-image-with-caption
+		margin-bottom 30px !important
+
+/*------------------------------------------------------------------
+Team Member
+-------------------------------------------------------------------*/
+
+.vl-team-member
+	position relative
+
+.vl-team-member--description
+	position relative
+	text-align center
+	overflow hidden
+	margin 15px 0
+	
+	.vl-team-member--content,
+	.vl-team-member--social
+		min-height 50px
+		transition(all 200ms linear)
+
+	.vl-team-member--name,
+	.vl-team-member--function
+		margin 0
+		
+	.vl-team-member--name
+		font-size 18px
+		
+	.vl-team-member--function
+		font-size 14px
+
+.vl-team-member--social
+	position absolute
+	top 0
+	left 0
+	width 100%
+	padding 10px 0
+	opacity 0
+	text-align center
+	transform(translateY(100%))
+
+.vl-team-member:hover
+
+	.vl-team-member--content
+		opacity 0
+		transform(translateY(-100%))
+		
+	.vl-team-member--social
+		opacity 1
+		transform(translateY(0))
+		
+@media (max-width: 767px)
+	.vl-team-member
+		margin-bottom 30px !important
+
+
+
+/*------------------------------------------------------------------
+Partner Logo
+-------------------------------------------------------------------*/
+
+.vl-partner-item
+	position relative
+	display table
+	width 100%
+
+.vl-partner-item--inner
+	display table-cell
+	vertical-align middle
+	opacity .9
+	transition(all 200ms linear)
+	img
+		display inline-block
+		width auto
+
+.vl-partner-item:hover .vl-partner-item--inner
+	opacity 1
+
+@media (max-width: 767px)
+	.vl-partner-item
+		margin-bottom 30px !important
+
+/*------------------------------------------------------------------
+Counter Up
+-------------------------------------------------------------------*/
+
+.vl-counter-up
+	position relative
+	
+	.vl-counter-number,
+	.vl-counter-description
+		display block
+		margin 0
+	
+	.vl-counter-number
+		font-size 48px
+		line-height 48px
+		font-weight 700
+		
+	.vl-counter-description
+		margin-top 5px
+		font-weight normal
+
+@media (max-width: 767px)
+	.vl-counter-up
+		margin-bottom 30px !important
+
+/*------------------------------------------------------------------
+Alert Message
+-------------------------------------------------------------------*/
+
+.vl-alert,
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message
+	position relative
+	padding 20px 30px
+	margin 0 0 30px !important
+	border-width 2px
+	border-style solid
+	border-radius(0)
+	&:last-child
+		margin-bottom 0
+	&::before
+		top auto
+		color rgba($white, .4)
+	a:hover
+		color inherit
+
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message
+	padding 20px 30px 20px 60px !important
+	
+.woocommerce-message::before
+	color rgba($black, .4)
+
+.vl-alert.vl-alert-classic,
+.woocommerce-message
+	background-color $lgray
+	border 2px solid $lgray
+
+.vl-alert.vl-alert-danger,
+.woocommerce-error
+	background-color #f03741
+	border-color #f03741
+	color $white
+
+.vl-alert.vl-alert-success
+	background-color #52cd75
+	border-color #52cd75
+	color $white
+	
+.vl-alert.vl-alert-warning
+	background-color #fccc22
+	border-color #fccc22
+	color $white
+
+.vl-alert.vl-alert-info,
+.woocommerce-info
+	background-color #8cc3f7
+	border-color #8cc3f7
+	color $white
+
+.vl-alert-dismissible
+	padding-right 55px
+
+.vl-alert-close
+	position absolute
+	top 10px
+	right 10px
+	height 30px
+	width 30px
+	text-align center
+	cursor pointer
+	line-height 30px
+	font-size 18px
+	&:hover
+		color inherit
+
+
+/*------------------------------------------------------------------
+Services
+-------------------------------------------------------------------*/
+
+.vl-services
+	display block
+	position relative
+	
+	.vl-services--title,
+	.vl-services--description
+		margin 0
+	
+	.vl-services--content
+		padding 0
+
+
+.vl-services.vl-services-01 .vl-services--icon
+	margin-top 5px
+
+.vl-services.vl-icon-position-left
+	
+	.vl-services--icon
+		float left
+		
+	.vl-services--content
+		padding-left 50px
+		
+.vl-services.vl-icon-position-right
+	
+	.vl-services--icon
+		float right
+		
+	.vl-services--content
+		padding-right 50px
+		text-align right
+
+
+.vl-services.hover-effect
+	border 1px solid $lgray
+	transition(all 200ms linear)
+	box-shadow(0 0 0 rgba($black, 10%))
+	&:hover
+		box-shadow(0 10px 20px rgba($black, 10%))
+		transform(translateY(-6px))
+
+			
+@media (max-width: 767px)
+	.vl-services
+		margin-bottom 30px !important
+
+
+/*------------------------------------------------------------------
+Circle Progress Bar
+-------------------------------------------------------------------*/
+
+
+.vl-circle-progress-bar
+	position relative
+	text-align center
+	
+	canvas,
+	.vl-circle-progress-bar--circle
+		display block
+		margin 0 auto
+		
+	.vl-circle-progress-bar--circle
+		position absolute
+		top 0
+		left 0
+		width 100%
+		span
+			position absolute
+			top 50%
+			left 50%
+			width 70px
+			height 70px
+			line-height 70px
+			margin-top -35px
+			margin-left -35px
+			text-align center
+			color $white
+			font-size 18px
+			border-radius 50%
+			&::after
+				content '%'
+
+	.vl-circle-progress-bar--title
+		font-weight normal
+		position relative
+		margin-top 15px
+		margin-bottom 0
+		display block
+
+/*------------------------------------------------------------------
+Progress Bar
+-------------------------------------------------------------------*/
+
+.vl-progress-bar
+	position relative
+	overflow hidden
+	.vl-progress-bar--title
+		font-weight normal
+		position relative
+		margin-bottom 5px
+		display block
+		
+	.vl-progress-bar--percent
+		position absolute
+		top 0
+		left 0
+		height 100%
+		text-align right
+		min-width 30%
+		&::after
+			content '%'
+			
+	.vl-progress-bar--text
+		z-index 3
+		position relative
+
+.vl-progress-bar--outer
+	width 100%
+	position relative
+	overflow hidden
+	border-radius 10px
+	.vl-progress-bar--inner
+		position absolute
+		top 0
+		left 0
+		height 100%
+		width 0
+		box-shadow(inset 0 -2px 0 rgba($black, 0.08))
+
+@media (max-width: 767px)
+	.vl-progress-bars
+		margin-bottom 30px !important
+
+/*------------------------------------------------------------------
+Pricing Table
+-------------------------------------------------------------------*/
+
+
+.vl-pricing-table
+	position relative
+	text-align center
+	padding 0 0 30px
+	border 2px solid darken($lgray, 3%)
+	
+	.vl-price-header
+		padding 30px 0 10px
+		
+		.vl-price-icon
+			font-size 36px
+			display block
+			padding 10px 0 0
+			
+		.vl-price-name
+			display block
+			padding 15px 0
+			margin-bottom 0
+			
+		.vl-price
+			font-size 44px
+			display block
+		
+		.vl-period
+			margin-top 10px
+			font-size 14px
+			text-transform lowercase
+		
+	.vl-price-body
+		padding 10px 0 30px
+		line-height 2rem
+		
+		strong
+			font-weight 700
+
+	
+	.featured-flag
+		position absolute
+		top 10px
+		right 10px
+		height 26px
+		width 26px
+		text-align center
+		line-height 26px
+		font-size 22px
+
+@media (max-width: 767px)
+	.vl-pricing-table
+		margin-bottom 30px !important
+	
+/*------------------------------------------------------------------
+Google Map
+-------------------------------------------------------------------*/
+
+.vl-map
+	position relative
+
+
+/*------------------------------------------------------------------
+Video Lightbox
+-------------------------------------------------------------------*/
+ 
+.vl-video-lightbox
+	position relative
+
+.vl-video-lightbox--overlay
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 1
+	background-color rgba($black, 40%)
+	
+.vl-video-lightbox--link
+	display inline-block
+	position absolute
+	top 50%
+	left 50%
+	height 60px
+	width 60px
+	line-height 63px
+	border-radius 50%
+	padding-left 5px
+	text-align center
+	font-size 28px
+	color $white
+	z-index 2
+	box-shadow(0 0 0 rgba($white, 0.4))
+	transform(translate3d(-50%, -50%, 0))
+	animation(pulsing 2s infinite)
+	&:hover
+		color $white
+		animation(none)
+
+
+@keyframes pulsing
+	0%
+		box-shadow(0 0 0 0 rgba($white, 0.4))
+	70%
+		box-shadow(0 0 0 30px rgba($white, 0))
+	100%
+		box-shadow(0 0 0 0 rgba($white, 0))
+
+
+@media (max-width: 767px)
+	.vl-video-lightbox
+		margin-bottom 30px !important
+		
+
+/*------------------------------------------------------------------
+Custom Title
+-------------------------------------------------------------------*/
+
+.vl-custom-title,
+.vl-custom-shop-title
+	position relative
+	
+	.vl-custom-title--line,
+	.vl-custom-shop-title--line
+		position absolute
+		display block
+		bottom 0
+		height 1px
+		
+	.vl-custom-title--line-large
+		width 60px
+		
+	.vl-custom-title--line-medium
+		width 40px
+		
+	.vl-custom-title--line-small
+		width 30px
+		
+
+	&.vl-text-left .vl-custom-title--line
+		left 0
+		
+	&.vl-text-right .vl-custom-title--line
+		right 0
+		
+	&.vl-text-center .vl-custom-title--line
+		left 50%
+		transform(translateX(-50%))
+
+/*------------------------------------------------------------------
+Testimonial
+-------------------------------------------------------------------*/
+
+.vl-testimonial
+	
+	.vl-testimonial--avatar
+		display inline-block
+		margin-bottom 15px
+		height 50px
+		width 50px
+		img
+			border-radius(50%)
+
+	.vl-testimonial--author
+		font-size 14px
+		margin-top 10px
+	
+	.vl-testimonial--text
+		padding 0
+		margin 0
+	
+/*------------------------------------------------------------------
+Overlay
+-------------------------------------------------------------------*/
+
+.vc-overlay
+	position relative
+
+.vc-overlay::before
+	content ''
+	position absolute
+	display block !important
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background-color inherit
+	z-index 1
+	
+.vc-overlay > *
+	position relative
+	z-index 2
+   
+
+/*------------------------------------------------------------------
+Single Post
+-------------------------------------------------------------------*/
+	
+.vc-single-post .vl-post--content
+	border-bottom none !important
+			
+/*------------------------------------------------------------------
+Collage
+-------------------------------------------------------------------*/
+
+.vl-collage-image
+	position relative
+	background-color $lgray
+	a
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		z-index 1
+
+			
+/*------------------------------------------------------------------
+Contact Form 7
+-------------------------------------------------------------------*/
+
+.wpcf7-form
+	p
+		margin 0
+		padding 0
+	br
+		display none
+		
+	.ajax-loader
+		display none  !important
+	
+	.wpcf7-response-output
+		padding 20px 30px
+	
+	.wpcf7-not-valid-tip
+		top -30px
+		font-size 12px
+	
+	.wpcf7-validation-errors,
+	.wpcf7-mail-sent-ng
+		background-color #f2dede
+		border-color #ebcccc
+		color #a94442
+
+	.wpcf7-mail-sent-ok
+		background-color #dff0d8
+		border-color #d0e9c6
+		color #3c763d
+		
+	.wpcf7-spam-blocked
+		background-color #fcf8e3
+		border-color #faf2cc
+		color #8a6d3b
+		
+.vl-btn-submit
+	position relative
+	display inline-block
+	background-color transparent
+	cursor pointer
+	border none
+	outline 0
+	padding 0
+	span
+		position relative
+		display inline-block
+		font-weight 700
+		font-size 22px
+		color $gray
+	span::before
+		content attr(data-content)
+		position absolute
+		top 0
+		left 0
+		height 100%
+		width 0
+		overflow hidden
+		transition(all 200ms linear)
+	&:hover 
+		span::before
+			width 100%
+
+/*------------------------------------------------------------------
+Tabs
+-------------------------------------------------------------------*/
+
+.vc_tta.vc_general 
+	.vc_tta-panel
+		.vc_tta-panel-heading,
+		.vc_tta-panel-body
+			border-radius(0)
+
+.vc_tta.vc_general 
+	.vc_tta-panels
+		border-radius(0 !important)
+	.vc_tta-tab>a
+		border-radius(0 !important)
+		background-color $lgray
+		color $black
+
+/*------------------------------------------------------------------
+VC Container
+-------------------------------------------------------------------*/
+
+.vl-vc-container
+	margin 0 !important
