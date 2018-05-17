@@ -1,0 +1,33 @@
+
+---Downloaded files---
+The import files for: Demo Default were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://swapnamella.test
+Data file = /Users/Mike1/MAMP/swapnamella.test/wp-content/themes/paragon/framework/dashboard/demo-import/demo-content.xml
+Widget file = /Users/Mike1/MAMP/swapnamella.test/wp-content/themes/paragon/framework/dashboard/demo-import/widgets.json
+Customizer file = /Users/Mike1/MAMP/swapnamella.test/wp-content/themes/paragon/framework/dashboard/demo-import/customizer1.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Widget already exists
+VLThemes: Popular Posts - Popular News - Imported
+Recent Comments - Recent Comments - Imported
+Categories - Categories - Imported
+
+Contact Sidebar : 
+
+Text - No Title - Imported
+null-instagram-feed - Instagram - Site does not support widget
+rotatingtweets_widget - Latest Tweets - Site does not support widget
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+
