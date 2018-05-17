@@ -1,0 +1,33 @@
+
+---Downloaded files---
+The import files for: Demo Default were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = http://wp.vlthemes.com/paragon
+Data file = /var/www/vlthemes/data/www/wp.vlthemes.com/paragon/wp-content/themes/paragon/framework/dashboard/demo-import/demo-content.xml
+Widget file = /var/www/vlthemes/data/www/wp.vlthemes.com/paragon/wp-content/themes/paragon/framework/dashboard/demo-import/widgets.json
+Customizer file = /var/www/vlthemes/data/www/wp.vlthemes.com/paragon/wp-content/themes/paragon/framework/dashboard/demo-import/customizer1.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Widget already exists
+VLThemes: Popular Posts - Popular News - Widget already exists
+Recent Comments - Recent Comments - Widget already exists
+Categories - Categories - Widget already exists
+
+Contact Sidebar : 
+
+Text - No Title - Widget already exists
+Instagram - Instagram - Widget already exists
+Rotating Tweets - Latest Tweets - Widget already exists
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.
+
+---pt-ocdi/after_import---
+

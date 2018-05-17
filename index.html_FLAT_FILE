@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapna Mella, Digital Video Editor | Be Like Water</title>
+  <meta name="description" content="Swapna Mella, Digital Video Editor" />
+  <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+  <link rel="stylesheet" href="https://belikewater.ca/css/normalize.css">
+  <link rel="stylesheet" href="https://belikewater.ca/css/foundation.css">
+  <link rel="stylesheet" href="https://belikewater.ca/css/blw/blw.min.css">
+  <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Lora:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|Oxygen:400,700,300'
+    rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Ovo|Muli:300,300italic,400italic' rel='stylesheet'
+    type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Raleway:200,300,800,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <script src="https://belikewater.ca/js/vendor/modernizr.js"></script>
+
+  <style>
+    body {
+      background: white url('headshot.jpg') no-repeat right bottom;
+      background-size: 40%;
+      background-attachment: fixed;
+    }
+    header{
+      margin-bottom: 3rem;
+    }
+
+    #content {
+      padding: 0rem;
+      box-shadow: 0rem 0rem 3rem #bbb;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .copy {
+      padding: 0 5rem 2rem;
+    }
+    .h1-container {
+      padding: 2rem 0;
+    }
+    h1 span {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-top: 0.5rem;
+    }
+    h2{
+      line-height: 1;
+      margin-top: 2rem;
+    }
+    h3{
+      font-weight: 300;
+    }
+
+
+
+    @media screen and (max-width: 1024px) {
+      header{
+      margin-bottom: 1rem;
+    }
+      .copy {
+        padding: 2rem;
+      }
+      body {
+        background: transparent;
+      }
+      .h1-container {
+        background: white url('headshot.jpg') no-repeat right bottom;
+        background-size: 60%;
+        border-bottom: 1px solid #a7a37e;
+        margin: 2rem 0;
+        min-height: 400px;
+      }
+      h1{
+        margin-left: 5%;
+        margin-right: 50%;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      header{
+      margin-bottom: 0.5rem;
+    }
+      a.wordmark {
+        margin-top: 1rem;
+      }
+      .copy{
+        padding: 1rem;
+      }
+      .h1-container {
+        margin: 1rem 0;
+        min-height: 300px;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      h1 span{
+        font-size: 1.5rem;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      a.wordmark {
+        margin-top: 1rem;
+      }
+      .copy{
+        padding: 1rem;
+      }
+      .h1-container {
+        margin: 1rem 0;
+        min-height: 200px;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      h1 span{
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53KJFLC');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+
+<body class="page-video single-entry">
+
+  <!-- Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53KJFLC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- End Google Tag Manager -->
+
+  <header>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="https://swapnamella.com" class="wordmark">
+          <img src="https://belikewater.ca/images/wordmark.png" alt="Be Like Water" />
+        </a>
+      </div><!-- /.columns -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="large-8 large-offset-2 columns">
+        <blockquote class="centered">
+        <p>Be like water, making its way through cracks. Do not be assertive, but adjust to the object, and you shall find a way around or through it.</p><cite>Bruce Lee</cite></blockquote>
+      </div><!-- /.large-4 offset-4 columns -->
+    </div><!-- /.row -->
+
+  </header>
+
+
+  <div class="row">
+
+
+    <div class="large-8 large-offset-2 small-12 columns">
+      <div id="content">
+
+
+        <div class="h1-container">
+          <h1 style="text-align:center;">Swapna Mella
+            <span>Digital Video Editor</span>
+          </h1>
+        </div>
+        <!-- /.h1-container -->
+
+        <div class="copy">
+          <p>
+            I'm Swapna Mella. I am an empathetic and intelligent picture editor, skilled at finding emotional nuance in the footage.
+            A reliable and even-tempered presence in the edit suite, I have 25 years of experience as an editor and writer
+            in television and broadcast news. I am available for documentary, reality and warm-hearted drama projects.
+          </p>
+          <p>
+            <a href="mailto:swapna@belikewater.ca">swapna@belikewater.ca</a>
+            <br>
+            <strong>416-953-3348</strong>
+          </p>
+
+<!--
+          <p>
+            <strong>Next availability: March, 2018</strong>
+          </p>
+-->
+          <h2>Relevant Editing Experience</h2>
+
+          <h3>Broadcast Editor | Toronto, ON</h3>
+
+          <p>
+            <strong>Women Who Lead (Editor) 2018</strong>
+            <br /> Lone Coyote Films
+            <br /> Documentary Web series</p>
+
+          <p>
+            <strong>Property Brothers Season 6 (Editor) 2016, 2017</strong>
+            <br /> Cineflix Productions
+            <br /> HGTV USA/ W Network</p>
+
+
+          <p>
+            <strong>Property Brothers Season 5 (Editor) 2015</strong>
+            <br /> Cineflix Productions
+            <br /> HGTV USA/ W Network</p>
+
+          <p>
+            <strong>Property Brothers Season 4 (Editor) 2014</strong>
+            <br /> Cineflix Productions
+            <br /> HGTV USA/ W Network</p>
+
+          <p>
+            <strong>Money Moron Seasons 1 &amp; 2 (Editor) 2013</strong>
+            <br /> Peacock Alley Films
+            <br /> Slice Network</p>
+
+          <p>
+            <strong>52 Words for Love (Scene Editor) 2012</strong>
+            <br /> Mythography Films
+            <br /> Independent feature film</p>
+
+          <p>
+            <strong>Princess 2 (Editor) 2011</strong>
+            <br /> Red Apple / Frantic Films
+            <br /> Slice Network Canada</p>
+
+          <p>
+            <strong>The Opener 2 (Editor) 2011</strong>
+            <br /> Red Apple / Frantic Films
+            <br /> Food Network Canada</p>
+
+          <p>
+            <strong>ReVamped 2 (Editor) 2010</strong>
+            <br /> Barna Alper / Entertainment One
+            <br /> Slice Network</p>
+
+          <p>
+            <strong>Animals at Work Season 2 (Editor) 2010</strong>
+            <br /> Cineflix UK Productions
+            <br /> British Broadcasting Corporation</p>
+
+          <p>
+            <strong>Property Virgins Season 4 (Editor) 2009</strong>
+            <br /> Nextfilm Productions
+            <br /> HGTV Network</p>
+
+          <p>
+            <strong>ReVamped (Editor) 2009</strong>
+            <br /> Barna Alper/ Entertainment One
+            <br /> Slice Network</p>
+
+          <p>
+            <strong>Animals at Work Season 1 (Editor) 2008</strong>
+            <br /> Cineflix UK Productions
+            <br /> British Broadcasting Corporation</p>
+
+          <p>
+            <strong>Packed! (Editor) 2008</strong>
+            <br /> UpFront Entertainment
+            <br /> CTV Travel+Escape</p>
+
+          <p>
+            <strong>The List (Editor) 2007</strong>
+            <br /> Nextfilm Productions
+            <br /> Slice Network</p>
+
+          <p>
+            <strong>Property Virgins Season 1 (Editor) 2006</strong>
+            <br /> Nextfilm Productions
+            <br /> HGTV Network</p>
+
+          <p>
+            <strong>Wedding S.O.S (Assemble Editor) 2006</strong>
+            <br /> Nextfilm Productions
+            <br /> Life Network</p>
+
+          <p>
+            <strong>Single Girl Diaries (Editor) 2006</strong>
+            <br /> In Theory Television
+            <br /> W Network</p>
+
+          <p>
+            <strong>BioDemocracy (Editor) 2003</strong>
+            <br /> No One to Blame Productions</p>
+
+        </div>
+        <!-- /.copy -->
+      </div>
+      <!-- /#content -->
+    </div>
+    <!-- /.columns -->
+  </div>
+  <!-- /.row -->
+
+
+
+  <script src="https://belikewater.ca/js/vendor/jquery.js"></script>
+  <script src="https://belikewater.ca/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+
+</html>
